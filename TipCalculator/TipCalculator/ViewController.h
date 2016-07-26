@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 
+@property (weak, nonatomic) IBOutlet UILabel *maxLabel;
+
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @property (weak, nonatomic) IBOutlet UISlider *Slider;

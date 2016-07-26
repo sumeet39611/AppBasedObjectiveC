@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3DCDC71D474411004F34F2 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3DCDC61D474411004F34F2 /* Background.png */; };
 		0AA99FFD1D42204700F186CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99FFC1D42204700F186CF /* main.m */; };
 		0AA9A0001D42204700F186CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99FFF1D42204700F186CF /* AppDelegate.m */; };
 		0AA9A0031D42204700F186CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9A0021D42204700F186CF /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A3DCDC61D474411004F34F2 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = "../../../../../../Downloads/App Images 2/Background.png"; sourceTree = "<group>"; };
 		0AA99FF81D42204700F186CF /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA99FFC1D42204700F186CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AA99FFE1D42204700F186CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				0AA9A0021D42204700F186CF /* ViewController.m */,
 				0AA9A0041D42204700F186CF /* Main.storyboard */,
 				0AA9A0071D42204700F186CF /* Assets.xcassets */,
+				0A3DCDC61D474411004F34F2 /* Background.png */,
 				0AA9A0091D42204700F186CF /* LaunchScreen.storyboard */,
 				0AA9A00C1D42204700F186CF /* Info.plist */,
 				0AA99FFB1D42204700F186CF /* Supporting Files */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA9A00B1D42204700F186CF /* LaunchScreen.storyboard in Resources */,
+				0A3DCDC71D474411004F34F2 /* Background.png in Resources */,
 				0AA9A0081D42204700F186CF /* Assets.xcassets in Resources */,
 				0AA9A0061D42204700F186CF /* Main.storyboard in Resources */,
 			);
@@ -298,6 +302,7 @@
 				0AA9A0111D42204700F186CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

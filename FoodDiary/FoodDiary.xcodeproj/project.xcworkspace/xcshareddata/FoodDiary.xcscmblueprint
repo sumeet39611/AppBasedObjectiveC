@@ -1,20 +1,20 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "26ED4B37BA912D27B62CF1D2668912A3BE962411",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E15E47E1D74EB6623DFFB7330188863FC0035CDC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "26ED4B37BA912D27B62CF1D2668912A3BE962411" : 0,
-    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : 0
+    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : 0,
+    "E15E47E1D74EB6623DFFB7330188863FC0035CDC" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "324D6CDA-99E1-42BD-A387-EDF34483B722",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "26ED4B37BA912D27B62CF1D2668912A3BE962411" : "objectiveC\/",
-    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : ""
+    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : "..",
+    "E15E47E1D74EB6623DFFB7330188863FC0035CDC" : "appBasedProgram\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "FoodDiary",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AppBasedProgram\/FoodDiary\/FoodDiary.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoodDiary\/FoodDiary.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/habeebak501\/demo",
@@ -22,9 +22,9 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "185113AA7A5D1057F715CDE03C05A8788662CF4A"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sumeet39611\/objective-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sumeet39611\/AppBasedObjectiveC.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26ED4B37BA912D27B62CF1D2668912A3BE962411"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E15E47E1D74EB6623DFFB7330188863FC0035CDC"
     }
   ]
 }

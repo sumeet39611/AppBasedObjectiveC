@@ -13,11 +13,22 @@
 @end
 
 @implementation ViewController
-@synthesize Label,textField,Slider,currentTipLabel;
+@synthesize Label,textField,Slider,currentTipLabel,maxLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    //changing slider maxValue to 40
+    Slider.maximumValue = 0.4;
+    NSString *tipString = [[NSString alloc]initWithFormat:@"%1.2f%%",[Slider maximumValue] * 100 ];
+    
+    maxLabel.text = tipString;
+    
+    //want only numeric keypad
+    //textField.keyboardType = UIKeyboardTypeNumberPad;
+    
+
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -39,11 +50,26 @@
 - (IBAction)buttonPressed:(id)sender {
     NSString *userInput= [textField text];
     
-    float billAmount = [userInput floatValue];
-    float tipAmount = [Slider value] * billAmount;
+    if ([userInput length] == 0) {
+        
+        //adding alert view if no amount is entered and you want to calculate tip
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Bill Amount" message:@"You forget to type in Bill Amount" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+        
+        [alertView addAction:defaultAction];
+        [self presentViewController:alertView animated:YES completion:nil];
+        
+    } else {
+        
+        float billAmount = [userInput floatValue];
+        float tipAmount = [Slider value] * billAmount;
+        
+        NSString *tipString = [[NSString alloc]initWithFormat:@"%1.2f",tipAmount ];
+        
+        Label.text = tipString;
+        
+    }
     
-    NSString *tipString = [[NSString alloc]initWithFormat:@"%1.2f",tipAmount ];
-    
-    Label.text = tipString;
 }
 @end

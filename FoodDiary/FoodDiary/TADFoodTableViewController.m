@@ -24,19 +24,19 @@
     NSLog(@"adding food !");
 }
 
+
 - (NSString *)plistPath {
     NSString *homeDirectory = NSHomeDirectory();
-    NSString *filePath = [homeDirectory stringByAppendingString:@"/documents/foods.plist"];
+    NSString *filePath = [homeDirectory stringByAppendingString:@"/Documents/foods.plist"];
     return filePath;
 }
 
 -(void) saveData:(NSNotification *)notification{
     
-    NSLog(@"aaaaa");
     NSString *filePath;
     filePath = [self plistPath];
     [foodArray writeToFile:filePath atomically:YES];
-    NSLog(@"sssss");
+    
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
