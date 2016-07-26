@@ -64,7 +64,7 @@
     if([[NSFileManager defaultManager] fileExistsAtPath:[self plistPath]]){
         foodArray = [[NSMutableArray alloc] initWithContentsOfFile:[self plistPath]];
     }else {
-    NSDictionary *firstFoodDictionary = [[NSDictionary alloc]initWithObjectsAndKeys:@"Pizza", kTADFoodName,@"Pizza Place",kTADRestaurantName, nil];
+    NSDictionary *firstFoodDictionary = [[NSDictionary alloc]initWithObjectsAndKeys:@"Pizza", kTADFoodName,@"Pizza Place",kTADRestaurantName,@"Good",kTADRating, nil];
     
     foodArray =[[NSMutableArray alloc]initWithObjects:firstFoodDictionary, nil];
     }

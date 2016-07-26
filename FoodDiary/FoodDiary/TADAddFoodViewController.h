@@ -14,6 +14,7 @@
 @property (nonatomic,weak) TADFoodTableViewController *FoodTableViewController;
 @property (weak, nonatomic) IBOutlet UITextField *restaurantTextField;
 @property (weak, nonatomic) IBOutlet UITextField *foodTextField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *ratingControl;
 
 - (IBAction)addFoodButtonPressed:(id)sender;
 

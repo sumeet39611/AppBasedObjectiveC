@@ -14,5 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *restaurantLabel;
 @property (nonatomic,weak) NSDictionary *food;
+@property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
 
 @end

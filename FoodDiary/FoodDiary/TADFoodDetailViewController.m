@@ -15,7 +15,7 @@
 
 @implementation TADFoodDetailViewController
 
-@synthesize foodLabel,restaurantLabel,food;
+@synthesize foodLabel,restaurantLabel,food,ratingLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +32,10 @@
     [super viewWillAppear:animated];
     [foodLabel setText:[food objectForKey:kTADFoodName]];
     [restaurantLabel setText:[food objectForKey:kTADRestaurantName]];
-    
+ 
+    NSString *foodRating = [food objectForKey:kTADRating];
+    NSString *foodRatingSentence= [[NSString alloc] initWithFormat:@"The Food is %@",foodRating];
+    [ratingLabel setText:foodRatingSentence];
 }
 
 /*

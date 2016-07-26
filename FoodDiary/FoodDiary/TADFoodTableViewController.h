@@ -10,6 +10,7 @@
 
 #define kTADFoodName @"FoodName"
 #define kTADRestaurantName @"RestaurantName"
+#define kTADRating @"Rating"
 
 @interface TADFoodTableViewController : UITableViewController
 

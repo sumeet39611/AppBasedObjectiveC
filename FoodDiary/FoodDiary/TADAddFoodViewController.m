@@ -14,7 +14,7 @@
 
 @implementation TADAddFoodViewController
 
-@synthesize foodTextField,FoodTableViewController,restaurantTextField;
+@synthesize foodTextField,FoodTableViewController,restaurantTextField,ratingControl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,7 +42,16 @@
     
     NSString *newRestaurantName = [restaurantTextField text];
     
-    NSDictionary *newFood = [[NSDictionary alloc] initWithObjectsAndKeys:newFoodName,kTADFoodName,newRestaurantName, kTADRestaurantName, nil];
+    NSString *rating = @"OK";
+    
+    if([ratingControl selectedSegmentIndex]== 0){
+        rating = @"Good";
+    }else if([ratingControl selectedSegmentIndex] == 1){
+        rating = @"Bad";
+    }
+        
+    
+    NSDictionary *newFood = [[NSDictionary alloc] initWithObjectsAndKeys:newFoodName,kTADFoodName,newRestaurantName, kTADRestaurantName, rating,kTADRating, nil];
     
     [FoodTableViewController addFood:newFood ];
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];

@@ -101,18 +101,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr4-Zh-geN">
-                                <rect key="frame" x="107" y="191" width="106" height="30"/>
+                                <rect key="frame" x="107" y="242" width="106" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.3729375962" blue="0.3012311392" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Add food"/>
                                 <connections>
                                     <action selector="addFoodButtonPressed:" destination="ZPe-wz-HcB" eventType="touchUpInside" id="uUK-yj-oqm"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L8e-Cy-gVA">
+                                <rect key="frame" x="107" y="173" width="106" height="29"/>
+                                <segments>
+                                    <segment title="Good"/>
+                                    <segment title="Bad"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="foodTextField" destination="twq-co-KE7" id="oaU-66-WQ6"/>
+                        <outlet property="ratingControl" destination="L8e-Cy-gVA" id="UZb-jT-Wns"/>
                         <outlet property="restaurantTextField" destination="fAq-Uy-138" id="7H6-10-hk9"/>
                     </connections>
                 </viewController>
@@ -156,12 +164,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Food is OK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Wm-OxW">
+                                <rect key="frame" x="20" y="211" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aSK-9b-IA2"/>
                     <connections>
                         <outlet property="foodLabel" destination="BOb-km-SAh" id="oHy-P9-Lkt"/>
+                        <outlet property="ratingLabel" destination="ZhR-Wm-OxW" id="Pcy-eA-4aT"/>
                         <outlet property="restaurantLabel" destination="evq-jh-9A9" id="2kH-Lc-SFl"/>
                     </connections>
                 </viewController>
