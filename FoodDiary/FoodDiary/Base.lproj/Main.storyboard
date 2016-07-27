@@ -115,11 +115,22 @@
                                     <segment title="Bad"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iV-qJ-QaL">
+                                <rect key="frame" x="107" y="213" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kG5-VG-ads">
+                                <rect key="frame" x="69" y="214" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="kG5-VG-ads" id="H6G-rE-ejA"/>
                         <outlet property="foodTextField" destination="twq-co-KE7" id="oaU-66-WQ6"/>
+                        <outlet property="locationLabel" destination="2iV-qJ-QaL" id="8gs-ma-G2g"/>
                         <outlet property="ratingControl" destination="L8e-Cy-gVA" id="UZb-jT-Wns"/>
                         <outlet property="restaurantTextField" destination="fAq-Uy-138" id="7H6-10-hk9"/>
                     </connections>
@@ -170,12 +181,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UNv-dE-mgL">
+                                <rect key="frame" x="40" y="271" width="240" height="128"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aSK-9b-IA2"/>
                     <connections>
                         <outlet property="foodLabel" destination="BOb-km-SAh" id="oHy-P9-Lkt"/>
+                        <outlet property="mapView" destination="UNv-dE-mgL" id="U3i-Zk-4uC"/>
                         <outlet property="ratingLabel" destination="ZhR-Wm-OxW" id="Pcy-eA-4aT"/>
                         <outlet property="restaurantLabel" destination="evq-jh-9A9" id="2kH-Lc-SFl"/>
                     </connections>

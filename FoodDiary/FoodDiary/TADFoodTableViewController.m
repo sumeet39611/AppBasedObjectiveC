@@ -25,6 +25,8 @@
 }
 
 
+
+
 - (NSString *)plistPath {
     NSString *homeDirectory = NSHomeDirectory();
     NSString *filePath = [homeDirectory stringByAppendingString:@"/Documents/foods.plist"];
@@ -32,10 +34,11 @@
 }
 
 -(void) saveData:(NSNotification *)notification{
-    
+
     NSString *filePath;
     filePath = [self plistPath];
-    [foodArray writeToFile:filePath atomically:YES];
+
+     [foodArray writeToFile:filePath atomically:YES];
     
 }
 
@@ -54,25 +57,22 @@
         
     }
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveData:)  name:UIApplicationDidEnterBackgroundNotification object:nil];
     
     if([[NSFileManager defaultManager] fileExistsAtPath:[self plistPath]]){
         foodArray = [[NSMutableArray alloc] initWithContentsOfFile:[self plistPath]];
     }else {
+        
+    //Making dictionary of objects with keys
     NSDictionary *firstFoodDictionary = [[NSDictionary alloc]initWithObjectsAndKeys:@"Pizza", kTADFoodName,@"Pizza Place",kTADRestaurantName,@"Good",kTADRating, nil];
     
+     //converting dicionary into mutable array
     foodArray =[[NSMutableArray alloc]initWithObjects:firstFoodDictionary, nil];
     }
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,6 +11,9 @@
 #define kTADFoodName @"FoodName"
 #define kTADRestaurantName @"RestaurantName"
 #define kTADRating @"Rating"
+#define kTADLongitude @"Longitude"
+#define kTADLatitude @"Latitude"
+
 
 @interface TADFoodTableViewController : UITableViewController
 

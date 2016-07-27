@@ -15,7 +15,7 @@
 
 @implementation TADFoodDetailViewController
 
-@synthesize foodLabel,restaurantLabel,food,ratingLabel;
+@synthesize foodLabel,restaurantLabel,food,ratingLabel,mapView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,6 +36,17 @@
     NSString *foodRating = [food objectForKey:kTADRating];
     NSString *foodRatingSentence= [[NSString alloc] initWithFormat:@"The Food is %@",foodRating];
     [ratingLabel setText:foodRatingSentence];
+    
+    NSNumber *latitude = [food objectForKey:kTADLatitude];
+    NSNumber *longitude = [food objectForKey:kTADLongitude];
+    
+    MKCoordinateRegion region;
+    region.span= MKCoordinateSpanMake(0.02, 0.02);
+    region.center = CLLocationCoordinate2DMake([latitude floatValue], [longitude floatValue]);
+    [mapView setRegion:region];
+    
+    
+    
 }
 
 /*

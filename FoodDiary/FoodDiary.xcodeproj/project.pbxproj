@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A39E3481D487AF100C94FB0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39E3471D487AF100C94FB0 /* MapKit.framework */; };
+		0A3DCDFE1D478919004F34F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3DCDFD1D478919004F34F2 /* CoreLocation.framework */; };
 		0A5BD11E1D45D8E800C278CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BD11D1D45D8E800C278CC /* main.m */; };
 		0A5BD1211D45D8E800C278CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BD1201D45D8E800C278CC /* AppDelegate.m */; };
 		0A5BD1271D45D8E800C278CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BD1251D45D8E800C278CC /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A39E3471D487AF100C94FB0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0A3DCDFD1D478919004F34F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0A5BD1191D45D8E800C278CC /* FoodDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5BD11D1D45D8E800C278CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5BD11F1D45D8E800C278CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A39E3481D487AF100C94FB0 /* MapKit.framework in Frameworks */,
+				0A3DCDFE1D478919004F34F2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,8 @@
 				0A5BD1281D45D8E800C278CC /* Assets.xcassets */,
 				0A5BD12A1D45D8E800C278CC /* LaunchScreen.storyboard */,
 				0A5BD12D1D45D8E800C278CC /* Info.plist */,
+				0A39E3471D487AF100C94FB0 /* MapKit.framework */,
+				0A3DCDFD1D478919004F34F2 /* CoreLocation.framework */,
 				0A5BD11C1D45D8E800C278CC /* Supporting Files */,
 			);
 			path = FoodDiary;
@@ -310,6 +318,7 @@
 				0A5BD1321D45D8E800C278CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
