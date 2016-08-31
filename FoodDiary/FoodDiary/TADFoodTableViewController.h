@@ -2,7 +2,9 @@
 //  TADFoodTableViewController.h
 //  FoodDiary
 //
-//  Created by BridgeLabz on 25/07/16.
+//  Creating interface TADFoodTableViewContrller
+//
+//  Created by Sumeet on 25/07/16.
 //  Copyright © 2016 com.bridgeLabz. All rights reserved.
 //
 
@@ -21,4 +23,5 @@
 
 -(void) addFood: (NSDictionary *) newFood;
 -(void) saveData: (NSNotification *)notification;
+
 @end

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "26ED4B37BA912D27B62CF1D2668912A3BE962411",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "26ED4B37BA912D27B62CF1D2668912A3BE962411" : 0,
+    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "654D4B08-2906-44D2-8290-D33CCE4A77E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "26ED4B37BA912D27B62CF1D2668912A3BE962411" : "objectiveC\/",
+    "185113AA7A5D1057F715CDE03C05A8788662CF4A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PhotoTouch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AppBasedProgram\/PhotoTouch\/PhotoTouch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/habeebak501\/demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "185113AA7A5D1057F715CDE03C05A8788662CF4A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sumeet39611\/objective-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26ED4B37BA912D27B62CF1D2668912A3BE962411"
+    }
+  ]
+}
